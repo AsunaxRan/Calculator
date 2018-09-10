@@ -10,16 +10,16 @@ function cNegate(param) {
     return -Number(param);
 }
 function add(param1, param2) {
-    return Number(param1) + Number(param2);
+    return (Number(param1)*10 + Number(param2)*10) / 10;
 }
 function minus(param1, param2) {
-    return Number(param1) - Number(param2);
+    return (Number(param1)*10 - Number(param2)*10) / 10;
 }
 function multiple(param1, param2) {
-    return Number(param1) * Number(param2);
+    return (Number(param1)*10 * Number(param2)*10) / 100;
 }
 function devide(param1, param2) {
-    return (param2 == 0)? "Cannot devide by zero" : (Number(param1) / Number(param2));
+    return (param2 == 0)? "Cannot devide by zero" : ((Number(param1)*10 / Number(param2)*10) / 100);
 }
 function modulo(param1, param2) {
     return (param2 == 0)? "Cannot devide by zero" : (Number(param1) % Number(param2));
@@ -223,21 +223,6 @@ $(document).ready(function () {
 
 		}
 
-		// if (toContinue == true) {
-		// 	if (dynamicDisplay != '') {
-		// 		calculationDisplay += dynamicDisplay;
-		// 		console.log("dynamicDisplay !empty: " + dynamicDisplay + " " + calculationDisplay);
-		// 	} else {
-		// 		if (currentOperator == '') {
-		// 			calculationDisplay += Number(firstNumber);
-		// 		} else {
-		// 			calculationDisplay += Number(lastNumber);
-		// 		}
-		// 		// calculationDisplay += Number(lastNumber); // ()
-		// 		console.log("dynamicDisplay empty: " + calculationDisplay);
-		// 	}
-		// 	toContinue = false;
-		// } // 1 lan thoi
 		if (dynamicDisplay != '') {
 			calculationDisplay += dynamicDisplay;
 		} else {
@@ -271,14 +256,6 @@ $(document).ready(function () {
 		canEditBasicOperator 	= true;
 		toContinue				= true;
 		var finalZoneCopy		= finalZone;
-
-		// if (finalZone == true && calculationDisplay == '') {
-		// 	lastNumber = firstNumber;
-		// 	finalZone = false;
-		// } else {
-		// 	var temp = $(".result_area").text();
-		// 	lastNumber = Number(temp);
-		// }
 
 		if (finalZone == true) {
 			finalZone = false;
