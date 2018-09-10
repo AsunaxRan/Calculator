@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.calculator {
+	width: 315px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 5px solid rgba(48,113,169,0.5);
+	overflow: hidden;
+	
+	.screen {
+		height: 100px;
+		border: 1px solid rgba(48,113,169,0.5);
+		text-align: right;
+		padding-left: 10px;
+		padding-right: 10px;
+		overflow: hidden;
+
+		.calculation_area {
+			border-bottom: 1px solid rgba(76,175,80,0.5);
+			height: 40px;
+			line-height: 40px;
+			overflow: hidden;
+		}
+
+		.result_area {
+			height: 60px;
+			line-height: 60px;
+			font-size: 36px;
+			overflow: hidden;
+		}
+	} // .screen
+
+	.board {
+		height: 340px;
+		position: relative;
+
+		button {
+			width: 45px;
+			height: 45px;
+			position: absolute;
+			&:first-child {
+				top: 20px; left: 0px;
+			}
+			&:nth-child(2) {
+				top: 20px; left: 55px;
+			}
+			&:nth-child(3) {
+				top: 20px; left: 110px;
+			}
+			&:nth-child(4) {
+				top: 20px; left: 165px;
+			}
+			&:nth-child(5) {
+				top: 20px; left: 220px;
+			}
+
+			&:nth-child(6) {
+				top: 75px; left: 0px;
+			}
+			&:nth-child(7) {
+				top: 75px; left: 55px;
+			}
+			&:nth-child(8) {
+				top: 75px; left: 110px;
+			}
+			&:nth-child(9) {
+				top: 75px; left: 165px;
+			}
+			&:nth-child(10) {
+				top: 75px; left: 220px;
+			}
+
+			&:nth-child(11) {
+				top: 130px; left: 0px;
+			}
+			&:nth-child(12) {
+				top: 130px; left: 55px;
+			}
+			&:nth-child(13) {
+				top: 130px; left: 110px;
+			}
+			&:nth-child(14) {
+				top: 130px; left: 165px;
+			}
+			&:nth-child(15) {
+				top: 130px; left: 220px;
+			}
+
+			&:nth-child(16) {
+				top: 185px; left: 0px;
+			}
+			&:nth-child(17) {
+				top: 185px; left: 55px;
+			}
+			&:nth-child(18) {
+				top: 185px; left: 110px;
+			}
+			&:nth-child(19) {
+				top: 185px; left: 165px;
+			}
+			&:nth-child(20) {
+				top: 185px; left: 220px;
+			}
+
+			&:nth-child(21) {
+				top: 240px; left: 0px;
+			}
+			&:nth-child(22) {
+				top: 240px; left: 55px;
+			}
+			&:nth-child(23) {
+				top: 240px; left: 110px;
+			}
+			&:nth-child(24) {
+				top: 240px; left: 165px;
+			}
+			&:nth-child(25) {
+				top: 240px; left: 220px;
+				height: 100px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			&:nth-child(26) {
+				top: 295px; left: 0px;
+				width: 100px;
+			}
+			&:nth-child(27) {
+				font-size: 20px;
+				font-weight: bold;
+				top: 295px; left: 110px;
+			}
+			&:last-child {
+				top: 295px; left: 165px;
+			}
+		}
+	} // .board
+	
+} // .calculator

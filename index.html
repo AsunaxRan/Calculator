@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic calculator</title>
+
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <div class="calculation_area"></div>
+                <div class="result_area">0</div>
+            </div>
+            <div class="board">
+                <button class="btn btn-primary" id="mc" disabled>MC</button>
+                <button class="btn btn-primary" id="mr" disabled>MR</button>
+                <button class="btn btn-primary" id="ms" disabled>MS</button>
+                <button class="btn btn-primary" id="mp" disabled>M+</button>
+                <button class="btn btn-primary" id="mn" disabled>M-</button>
+                <button class="btn btn-danger event" value="clrc" id="clrc">&larr;</button>
+                <button class="btn btn-danger event" value="clrn" id="clrn">CE</button>
+                <button class="btn btn-danger" value="clrscr" id="clrscr">C</button>
+                <button class="btn btn-success event extra_operator" value="negate" id="plusmn">&plusmn;</button>
+                <button class="btn btn-success event extra_operator" value="sqrt" id="sqrt">&Sqrt;</button>
+                <button class="btn btn-default event number">7</button>
+                <button class="btn btn-default event number">8</button>
+                <button class="btn btn-default event number">9</button>
+                <button class="btn btn-primary event basic_operator" value="/" id="devide">&sol;</button>
+                <button class="btn btn-primary event basic_operator" value="%" id="modulo">&percnt;</button>
+                <button class="btn btn-default event number">4</button>
+                <button class="btn btn-default event number">5</button>
+                <button class="btn btn-default event number">6</button>
+                <button class="btn btn-primary event basic_operator" value="*" id="multiple">&ast;</button>
+                <button class="btn btn-success event extra_operator" value="reciproc" id="inverse">1/x</button>
+                <button class="btn btn-default event number">1</button>
+                <button class="btn btn-default event number">2</button>
+                <button class="btn btn-default event number">3</button>
+                <button class="btn btn-primary event basic_operator" value="-" id="minus">&minus;</button>
+                <button class="btn btn-danger event" value="=" id="equal">&equals;</button>
+                <button class="btn btn-default event number">0</button>
+                <button class="btn btn-default event number" id="dot">.</button>
+                <button class="btn btn-primary event basic_operator" value="+" id="plus">&plus;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
